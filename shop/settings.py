@@ -22,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-9z21p%pahr+r2%ng3v&o2j+kief(0k56=rj7+u-p2ydv_!gckg'
+SECRET_KEY = ''
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -164,8 +164,8 @@ LOGIN_URL = '/users/login/'
 # email sending
 EMAIL_HOST = 'smtp.ukr.net'
 EMAIL_PORT = 465
-EMAIL_HOST_USER = 'bestueverwanted@ukr.net'
-EMAIL_HOST_PASSWORD = 'QcCgQK7IPrcj1KpB'
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
 EMAIL_USE_SSL = True
 
 # EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
@@ -190,6 +190,6 @@ SOCIALACCOUNT_PROVIDERS = {
 
 # stripe
 
-STRIPE_PUBLIC_KEY = 'pk_test_51McVS1DlRVOcHGrNdUg6AAAHfUus2ZJCHgsojpUbY5XBUa7SOGvjXEw2sTz8wVETcPmmfiCThdik9KU5IIgdbq1r00HiWUcEaJ'
-STRIPE_SECRET_KEY = 'sk_test_51McVS1DlRVOcHGrNO8JCvp6zYdmyelXANoCJ9xNolbsIK6qGOJej8CA5I9CCTOiP4HY51whfyzp2nYAIO2mmYPCv00xad5n11l'
-STRIPE_WEBHOOK_SECRET = 'whsec_05447321a05e98b5f957dcac4e533e746e4ff0b7d296b5d3dbd73b7e92355d62'
+STRIPE_PUBLIC_KEY = ''
+STRIPE_SECRET_KEY = ''
+STRIPE_WEBHOOK_SECRET = ''
