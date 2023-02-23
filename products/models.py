@@ -1,8 +1,8 @@
+import stripe
+from django.conf import settings
 from django.db import models
 
 from users.models import User
-import stripe
-from django.conf import settings
 
 stripe.api_key = settings.STRIPE_SECRET_KEY
 
@@ -71,7 +71,6 @@ class Basket(models.Model):
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
     quantity = models.PositiveSmallIntegerField(default=0)
     created_timestamp = models.DateTimeField(auto_now_add=True)
-
     objects = BasketQuerySet.as_manager()
 
     def __str__(self):

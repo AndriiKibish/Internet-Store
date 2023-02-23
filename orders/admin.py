@@ -1,4 +1,5 @@
 from django.contrib import admin
+
 from orders.models import Order
 
 
@@ -10,5 +11,3 @@ class OrderAdmin(admin.ModelAdmin):
               ('email', 'address'),
               'basket_history', 'status', 'initiator')
     readonly_fields = ('id', 'created')
-
-

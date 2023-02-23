@@ -32,7 +32,7 @@ class UserRegistrationView(TitleMixin, SuccessMessageMixin, CreateView):
     template_name = 'users/registration.html'
     success_url = reverse_lazy('users:login')
     success_message = 'You have successfully registered! Check your email to confirm account'
-    title = 'Shop-Registration'
+    title = 'E-Store - Registration'
 
 
 class UserProfileView(TitleMixin, UpdateView):

@@ -9,19 +9,14 @@ from products.models import Basket, Product, ProductCategory
 
 class IndexView(TitleMixin, TemplateView):
     template_name = 'products/index.html'
-    title = 'Shop'
-
-    # def get_context_data(self, **kwargs):
-    #     context = super(IndexView, self).get_context_data()
-    #     context['title'] = 'Shop'
-    #     return context
+    title = 'E-Store'
 
 
 class ProductsListView(TitleMixin, ListView):
     model = Product
     template_name = 'products/products.html'
     paginate_by = 3
-    title = 'Shop-catalogue'
+    title = 'E-Store - catalogue'
 
     def get_queryset(self):
         queryset = super(ProductsListView, self).get_queryset()
